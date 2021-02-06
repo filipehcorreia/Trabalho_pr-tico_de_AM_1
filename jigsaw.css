@@ -1,0 +1,204 @@
+/*
+   TRABALHO 1 DE APLICAÇÕES MULTIMÉDIA 2020
+   GRUPO: NOME | NUMERO DE ALUNO
+*/
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-image: url(images/background.jpg);
+}
+
+#stage {
+  display: block;
+}
+
+#final {
+  display: none;
+}
+
+.tela {
+  position: relative;
+  width: 366px;
+  height: 366px;
+  margin: 0px;
+  background-color: white;
+  border: 10px solid #1D4952;
+  box-shadow: inset 2px 2px 2px 0px #aaaaaa, 4px 4px 4px #1E7179;
+  border-radius: 2%;
+}
+
+#title {
+  color: white;
+  text-shadow: 1px 1px 1px #1D4952; 
+}
+
+#output {
+  color: white;
+  font-family: tahoma;
+  font-size: 1em;
+  margin-top: 10px;
+  line-height: 25px !important;
+  width: 100%;
+  display: block;
+}
+#njogadas{
+  text-shadow: 1px 1px 1px #1D4952; 
+}
+
+#njogadas strong{
+  padding-left: 5px;
+  
+}
+
+.metade {
+  display: block;
+  float: left;
+  width: 50%;
+}
+
+.tesquerda {
+  text-align: left;
+  line-height: 25px;
+  display: table-cell !important;
+  vertical-align: middle !important;
+}
+
+.tdireita {
+  text-align: right;
+  line-height: 25px;
+  display: table-cell !important;
+  vertical-align: middle !important;
+}
+
+.cell {
+  display: block;
+  position: absolute;
+  height: 90px;
+  width: 90px;
+  border: 1px solid white;
+  box-shadow: 1px 1px 1px #888888;
+  cursor: pointer;
+  border-radius: 5%;
+}
+
+.cell:hover {
+  opacity: 0.8;
+}
+
+#game {
+  width: 390px;
+  height: 455px;
+  position: relative;
+  margin: 0px auto;
+  top: 50px;
+}
+
+@font-face {
+  font-family: PiratesWriters;
+  src: url("fonts/PiratesWriters.ttf");
+}
+
+h1 {
+  text-align: center;
+  font-family: PiratesWriters;
+  font-size: 50px;
+}
+
+p {
+  font-family: PiratesWriters;
+  font-size: 20px;
+  width: 384px;
+  padding: 10px;
+}
+
+#thumSet {
+  display: block;
+  height: 54px;
+  width: auto;
+  border: 1px solid white;
+  position: relative;
+  margin-top: 10px;
+}
+
+.icon {
+  float: right;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 3px 5px 3px 0px;
+  cursor: pointer;
+}
+
+.view {
+  background-image: url("images/ui/view.png");
+  box-shadow: inset 0 0 0 1px white;
+  border-radius: 50%;
+}
+
+.viewOff {
+  background-position-x: -20px!important;
+}
+
+.sound {
+  background-image: url("images/ui/sound-icon-250.png");
+}
+
+.soundOff {
+  background-position-x: -20px!important;
+}
+
+ .botaoimg{
+   float: right;
+   border-radius: 50%;
+   display: block;
+   width: 40px;
+   height: 40px;
+   background-position: 0 0;
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin: 3px 5px 3px 0px;
+   cursor: pointer;
+ }
+
+.botaoimg:hover {
+  width: 60px;!important;
+  height: 60px;!important;
+}
+
+.selecionada{
+  animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.hidden{
+  display: none;
+
+}
+
+.win{
+  animation: rotationwin 0.1s infinite linear;
+}
+
+@keyframes rotationwin {
+  from {
+    transform: rotate(-2deg);
+  }
+  to {
+    transform: rotate(2deg);
+  }
+}
